@@ -1,0 +1,25 @@
+{
+  "name": "release-pr",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radu2147/release-pr.git"
+  },
+  "author": "radu2147",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/radu2147/release-pr/issues"
+  },
+  "homepage": "https://github.com/radu2147/release-pr#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "@actions/exec": "^1.1.1",
+    "@actions/github": "^6.0.0",
+    "@octokit/webhooks-types": "^7.5.1"
+  }
+}

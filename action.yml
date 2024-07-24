@@ -1,0 +1,12 @@
+name: Release PR
+author: radu2147
+description: "A simple GitHub Action for releasing pull requests"
+branding:
+  icon: "git-pull-request"
+  color: blue
+outputs:
+  commit:
+    description: "Commit sha of merge commit"
+runs:
+  using: "node20"
+  main: "index.ts"
