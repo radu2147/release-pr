@@ -5,7 +5,7 @@ import type {
   PullRequestReviewCommentEditedEvent,
 } from "@octokit/webhooks-types";
 
-const REACTION = "eyes";
+const EYES_REACTION = "eyes";
 
 async function run(): Promise<void> {
   try {
@@ -37,7 +37,7 @@ async function run(): Promise<void> {
     await octokit.rest.reactions.createForIssueComment({
       ...context.repo,
       comment_id: Number(commentId),
-      content: REACTION,
+      content: EYES_REACTION,
     });
 
     await octokit.rest.pulls.merge({
